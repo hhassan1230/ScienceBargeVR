@@ -10,16 +10,18 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
 
-  const buttonPanel = new Surface(
+  const buttonsPanel = new Surface(
     400, 
     550, 
     Surface.SurfaceShape.Flat
   );
 
-  buttonPanel.setAngle(
+  buttonsPanel.setAngle(
     -0.6,
     0.1
   )
+
+
 
   const infoPanel = new Surface(
     400, 
@@ -33,13 +35,13 @@ function init(bundle, parent, options = {}) {
   )
 
   r360.renderToSurface(
-    r360.createRoot('Buttons', { /* initial props */ }),
-    buttonPanel
+    r360.createRoot('ConnectedHouseInfoPanel', { /* initial props */ }),
+    infoPanel
   );
 
   r360.renderToSurface(
-    r360.createRoot('InfoPanel', { /* initial props */ }),
-    infoPanel
+    r360.createRoot('ConnectedButtons', { /* initial props */ }),
+    buttonsPanel
   );
 
   // Load the initial environment
