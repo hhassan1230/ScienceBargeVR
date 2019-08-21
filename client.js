@@ -40,7 +40,7 @@ function init(bundle, parent, options = {}) {
   );
 
   r360.renderToSurface(
-    r360.createRoot('ConnectedButtons', { /* initial props */ }),
+    r360.createRoot('ConnectedButtonInfoPanel', { /* initial props */ }),
     buttonsPanel
   );
 
