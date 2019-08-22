@@ -1,6 +1,9 @@
 
 import React from 'react';
 import {
+  asset,
+  Image,
+  NativeModules,
   AppRegistry,
   StyleSheet,
   Text,
@@ -8,6 +11,34 @@ import {
   VrButton
 } from 'react-360';
 import { connect, changeRoom } from './store';
+
+const { AudioModule } = NativeModules;
+
+class AudioPanel extends React.Component {
+  playAmbientMusic() {
+    AudioModule.playEnvironmental({
+      source: asset('audio/ambient.wav'),
+      volume: 0.1,
+    });
+  }
+
+  stopAmbientMusic() {
+    AudioModule.stopEnvironmental();
+  }
+
+  render() {
+    return(
+      <View style={styles.audioPanel}>
+        <VrButton onClick={() => this.playAmbientMusic()}>
+          <Image style={{height: 50, width: 50}} source={asset('audioOn.png')} />
+        </VrButton>
+        <VrButton onClick={() => this.stopAmbientMusic()}>
+          <Image style={{height: 50, width: 50}} source={asset('audioOff.png')} />
+        </VrButton>
+      </View>
+    )
+  }
+}
 
 class HouseInfoPanel extends React.Component {
   render() {
@@ -33,7 +64,8 @@ class Button extends React.Component {
 
   render() {
     return(
-      <VrButton style={this.state.hover ? styles.hover : styles.button}
+      <VrButton
+                style={this.state.hover ? styles.hover : styles.button}
                 onEnter={() => this.setState({hover: true})}
                 onExit={() => this.setState({hover: false})}
                 onClick={() => this.clickHandler(this.props.room)}>
@@ -62,6 +94,7 @@ export default class ButtonInfoPanel extends React.Component {
         <View style={styles.buttonPanel}>
           <Text style={styles.header}>Room Selection</Text>
           { this.createRoomButtons(this.props.adjacentRooms) }
+          <AudioPanel />
         </View>
       </View>
     );
@@ -72,6 +105,9 @@ const ConnectedButtonInfoPanel = connect(ButtonInfoPanel);
 const ConnectedHouseInfoPanel = connect(HouseInfoPanel);
 
 const styles = StyleSheet.create({
+  audioPanel: {
+    flexDirection: 'row'
+  },
   infoPanel: {
     width: 400,
     height: 400,
