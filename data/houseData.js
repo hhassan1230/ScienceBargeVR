@@ -1,48 +1,49 @@
 export default house = {
-  House: {
-    roomName: 'House',
+  Entry: {
+    roomName: 'Entry',
     info: `
-      * 4 bedroom
-      * 3 bath
-      * Priced at $180,000`,
-    adjacentRooms: ['Foyer'],
+      * Add
+      * Text
+      * Here`,
+    img: 'Entry.jpg',
+    adjacentRooms: ['Main_Deck'],
   },
-  Foyer: {
-    roomName: 'Foyer' ,
+  Main_Deck: {
+    roomName: 'Main_Deck' ,
     info: `
-      * Wrought iron front door.
-      * Elegant etched glass inserts for privacy.
-      * Beautiful acrylic chandelier with LED lights.
-      * Hall closet for guest's coats and purses or for media storage.
-      * Classic non-skid ceramic tile floor.`,
-    img: 'foyer.jpg',
-    adjacentRooms: ['Dining_Room', 'Living_Room']
+      * Add Text For.
+      * Areas for Main Deck.
+      * Beautiful acrylic Hudson View with lights.
+      * Hall closet storage.
+      * Classic painted floors.`,
+    img: 'Main_Deck.jpg',
+    adjacentRooms: ['Entry', 'Greenhouse_1', 'Compose', 'Roof', 'Starboard_Patio']
   },
-  Dining_Room: {
-    roomName: 'Dining_Room',
+  Greenhouse_1: {
+    roomName: 'Greenhouse_1',
     info:`
       * Elegant chandelier with LED lights.
       * Tiered high ceilings.
       * Wrought iron window for added security.
       * Direct acces to kitchen for convenience.
       * Beautiful tile floor.`,
-    img: 'dining_room.jpg',
-    adjacentRooms: ['Kitchen', 'Foyer']
+    img: 'Greenhouse_1.jpg',
+    adjacentRooms: ['Main_Deck', 'Greenhouse_2']
   },
-  Kitchen: {
-    roomName: 'Kitchen',
+  Greenhouse_2: {
+    roomName: 'Greenhouse_2',
     info: `
-      * Granite counter tops and backsplash (3/4 inch-thick Brazilian Giallo Fiesta).
-      * Custom-made island with end drawers and wine bottle storage.
+      * Granite counter tops and backsplash.
+      * Custom-made island.
       * Samsung stainless steel appliances.
-      * Birchwood custom cabinets and pantry with elegant crown molding.
-      * Stainless steel 9" extra deep double sinks with pullout faucet and soap dispenser.
+      * Birchwood crown molding.
+      * Stainless steel 9" extra deep double sinks with pullout.
       * Under cabinet and top of cabinet LED lights.`,
-    img: 'kitchen.jpg',
-    adjacentRooms: ['Living_Room','Breakfast_Nook']
+    img: 'Greenhouse_2.jpg',
+    adjacentRooms: ['Greenhouse_1','Back_Patio']
   },
-  Breakfast_Nook: {
-    roomName: 'Breakfast_Nook',
+  Back_Patio: {
+    roomName: 'Back_Patio',
     info: `
       * Granite top custom-made cabinet
       * Custom wine rack display and storage.
@@ -50,11 +51,11 @@ export default house = {
       * Easy access to backyard when entertaining.
       * Open and spacious.
     `,
-    img: 'breakfast_nook.jpg',
-    adjacentRooms: ['Backyard','Living_Room','Kitchen', 'Master_Bedroom', 'Laundry_Room']
+    img: 'Back_Patio.jpg',
+    adjacentRooms: ['Greenhouse_2', 'Compose']
   },
-  Backyard: {
-    roomName: 'Backyard',
+  Compose: {
+    roomName: 'Compose',
     info: `
       * Extra large back yard for playground or future pool.
       * Sprinkler system.
@@ -62,132 +63,32 @@ export default house = {
       * Mature trees:
         shade: oak, pecan, fresno, acacia, royal poinciana, ficus, ceiba
         fruit: papaya, mango, limes.
-      * Entertaining and eating area for backyard barbeques.
+      * Entertaining and eating area for Compose barbeques.
     `,
-    img: 'backyard.jpg',
-    adjacentRooms: ['Breakfast_Nook','Bedroom_One']
+    img: 'Compose.jpg',
+    adjacentRooms: ['Main_Deck','Back_Patio']
   },
-  Master_Bedroom: {
-    roomName: 'Master_Bedroom',
+  Roof: {
+    roomName: 'Roof',
     info: `
     * Extra large bedroom, allows for sitting area.
     * Tiered cieling or architecture.
     * Quiet ceiling fan and light fixture.
     * Plush neutral taupe carpet.
     * Sliding door for easy access to backyard.`,
-    img: 'master_bedroom.jpg',
-    adjacentRooms: ['Master_Bathroom','Breakfast_Nook']
+    img: 'Roof.jpg',
+    adjacentRooms: ['Main_Deck','Starboard_Patio']
   },
-  Master_Bathroom:  {
-    roomName: 'Master_Bathroom',
+  Starboard_Patio:  {
+    roomName: 'Starboard_Patio',
     info: `
-      * Custom glass shower enclosure.
-      * Porcelain bath tiles and travertine molding.
-      * Privacy glass block window.
-      * Relaxing garden tub with jets.
-      * Seperate toilet room for privacy with storage.
-      * Double extractor lighted vents.`,
-    img: 'master_bathroom.jpg',
-    adjacentRooms: ['Master_Bedroom', 'Master_Bathroom_Two']
-  },
-  Master_Bathroom_Two: {
-    roomName: 'Master_Bathroom_Two',
-    info: `
-      * Custom glass shower enclosure.
-      * Porcelain bath tiles and travertine molding.
-      * Privacy glass block window.
-      * Relaxing garden tub with jets.
-      * Seperate toilet room for privacy with storage.
-      * Double extractor lighted vents.`,
-    img: 'master_bathroom_two.jpg',
-    adjacentRooms: ['Master_Bathroom']
-  },
-  Living_Room: {
-    roomName: 'Living_Room',
-    info: `
-      * Informal sunken family room.
-      * Chimney with mantle.
-      * Remote controlled ceiling fans.
-      * Tiered ceiling.
-      * T.V. wall mount/media closet.`,
-    img: 'living_room.jpg',
-    adjacentRooms: ['Foyer', 'Breakfast_Nook', 'Bedroom_One', 'Bedroom_Two', 'Bedroom_Three','Bathroom_Two']
-  },
-  Bedroom_One: {
-    roomName: 'Bedroom_One',
-    info: `
-      * Spacious bright and airy room.
-      * Perect for guests or mother-in-law.
-      * Private bathroom.
-      * Built-in bookshelf with elegant crown molding.
-      * Large space and wood flooring.
-      * Decorative wainscott and chair rail modlings.
-    `,
-    img: 'bedroom_one.jpg',
-    adjacentRooms:['Bathroom_One','Backyard','Living_Room']
-  },
-  Bathroom_One: {
-    roomName: 'Bathroom_One',
-    info: `
-      * Granite vanity and custom beveled edge mirror.
-      * Vanity-Kohler sink and bath fixtures.
-      * Elongated Kohler water saver toilet.
-      * Kohler glass shower enclosure.
-      * Custom ceramic tile and decorative metallic borders.
-      * Large custom storage closet.`,
-    img: 'bathroom_one.jpg',
-    adjacentRooms: ['Bedroom_One']
-  },
-  Bathroom_Two: {
-    roomName: 'Bathroom_Two',
-    info: `
-      * Marble vanity top with custom beveled-edge mirror.
-      * Elegant Kohler sink and bath fixtures.
-      * Elongated Kohler water-saver toilet.
-      * Custom large storage closet with extra deep shelves.
-      * Beautiful ceramic tile shower surround.
-      * Kohler glass shower enclosure.`,
-    img: 'bathroom_two.jpg',
-    adjacentRooms: ['Living_Room', 'Bedroom_Two', 'Bedroom_Three']
-  },
-  Bedroom_Two: {
-    roomName: 'Bedroom_Two',
-    info: `
-      * Large spacious room for 2-twin or 1-queen bedroom.
-      * Neutral taupe plush carpet.
-      * Wrought iron window for added security.
-      * Two closets.
-      * Custom shelving and cabinet.
-    `,
-    img: 'bedroom_two.jpg',
-    adjacentRooms: ['Bedroom_Three','Bathroom_Two']
-  },
-  Bedroom_Three: {
-    roomName: 'Bedroom_Three',
-    info: `
-      * Large spacious room enough for 2 twin or 1 queen size bed.
-      * Lighted ceiling fan fixture.
-      * Two closets.
-      * Plush neutral taupe carpet.`,
-    img: 'bedroom_three.jpg',
-    adjacentRooms: ['Bedroom_Two','Bathroom_Two']
-  },
-  Laundry_Room: {
-    roomName: 'Laundry_Room',
-    info: `
-      * Inside laundry room (washer and dryer negotiable).
-      * Extra overhead storage cabinets.
-      * Large storage closet.
-      * Linen closet with extra deep shelves.`,
-    img: 'laundry_room.jpg',
-    adjacentRooms: ['Master_Bedroom','Breakfast_Nook', 'Garage']
-  },
-  Garage: {
-    roomName: 'Garage',
-    info: `
-      * Garage room windows for daylight convenience.
-      * Double car garage with anti-slip surface floor.`,
-    img: 'garage.jpg',
-    adjacentRooms: ['Laundry_Room']
+      * Custom Text Here .
+      * Porcelain Awesome Sause.
+      * Privacy Patio.
+      * Relaxing garden View.
+      * Seperate storage.
+      * I'm just making stuff unp now.`,
+    img: 'Starboard_Patio.jpg',
+    adjacentRooms: ['Main_Deck', 'Roof']
   }
 }

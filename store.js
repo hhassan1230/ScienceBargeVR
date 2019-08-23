@@ -4,9 +4,9 @@ import { asset, Environment } from 'react-360';
 import house from './data/houseData';
 
 const State = {
-  room: house.House.roomName,
-  info: house.House.info,
-  adjacentRooms: house.House.adjacentRooms
+  room: house.Entry.roomName,
+  info: house.Entry.info,
+  adjacentRooms: house.Entry.adjacentRooms
 }
 
 const listeners = new Set();
