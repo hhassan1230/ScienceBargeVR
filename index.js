@@ -45,7 +45,7 @@ class HouseInfoPanel extends React.Component {
     return(
       <View>
         <View style={styles.infoPanel}>
-          <Text style={styles.header}>Room Info</Text>
+          <Text style={styles.header}>Info</Text>
           <Text style={{fontSize: 20, textAlign: 'center', fontWeight: 'bold'}}>{ this.props.info }</Text>
         </View>
       </View>
@@ -92,7 +92,8 @@ export default class ButtonInfoPanel extends React.Component {
     return (
       <View>
         <View style={styles.buttonPanel}>
-          <Text style={styles.header}>Room Selection</Text>
+          <Text style={styles.header}>Welcome to the {`${this.props.room.split('_').join(' ')}`}</Text>
+          <Text style={styles.header}>Area Selection</Text>
           { this.createRoomButtons(this.props.adjacentRooms) }
           <AudioPanel />
         </View>
