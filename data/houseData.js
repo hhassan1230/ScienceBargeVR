@@ -2,47 +2,61 @@ export default house = {
   Entry: {
     roomName: 'Entry',
     info: `
-      The Science Barge is a prototype sustainable urban farm
-      developed by NY Sun Works and acquired by Groundwork Hudson Valley
-      in October, 2008 to be operated as an environmental education center.`,
+      Groundwork Hudson Valley’s Science Barge is a floating environmental 
+      center first created in 2004 by NY Sun Works as a prototype rooftop farm. 
+      Since its acquisition by Groundwork in November 2008, 
+      it has served as an epicenter of sustainable agriculture, 
+      energy, and waste-management systems education for over 100,000 visitors of all ages!`,
     img: 'Entry.jpg',
     adjacentRooms: ['Main_Deck'],
   },
   Main_Deck: {
     roomName: 'Main_Deck' ,
     info: `
-      The Science Barge is open for weekday educational programs 
-      and field trips for schools, camps, and other groups 
-      from mid-April through the beginning of November.`,
+    A sustainable planet requires careful management of its natural resources. Less than 1/32 of the planet is arable soil, 
+    and less than 1% of our water is accessible and potable freshwater. 
+    As human population grows and nations continue to industrialize, 
+    we must adapt our food and energy production to create more equitable systems that preserve the health of our soils, 
+    forests, waterways, and stabilize our climate. The Science Barge demonstrates closed-loop resource management, resiliency planning, 
+    and urban food systems that reduce our water and carbon footprint.`,
     img: 'Main_Deck.jpg',
     adjacentRooms: ['Entry', 'Greenhouse_1', 'Compose', 'Roof', 'Starboard_Patio']
   },
   Greenhouse_1: {
     roomName: 'Greenhouse_1',
     info:`
-      The Science Barge greenhouse, floating on the Hudson River, 
-      grows an abundance of fresh produce including tomatoes, melons, popcorn, peppers, eggplant, 
-      and lettuce with zero net carbon emissions, zero pesticides, and zero runoff.`,
+      Our greenhouses feature hydroponic, aquaponic, and aeroponic 
+      growing techniques that optimize crop growth by controlling the temperature, 
+      air-flow, watering, and nutrients. Hydroponics means to grow in flowing water, using inert substrates to anchor roots (such as rock wool, 
+      coco coir, and clay pellets) and tailored nutrient recipes. Aquaponics combines aquaculture (fish farming) for nutrient production with hydroponics for nutrient delivery and water filtration.
+      Aeroponics utilizes misted nutrient water in an oxygen-rich root zone to promote rapid absorption and minimize water use. 
+      By recirculating the nutrient water, these systems can use 75-95% less water than traditional agriculture!`,
     img: 'Greenhouse_1.jpg',
     adjacentRooms: ['Main_Deck', 'Greenhouse_2']
   },
   Greenhouse_2: {
     roomName: 'Greenhouse_2',
     info: `
-      The Science Barge is a prototype sustainable urban farm
-      developed by NY Sun Works and acquired by Groundwork Hudson Valley
-      in October, 2008 to be operated as an environmental education center.`,
+      The 2nd Greenhouse houses our fruit crops, including tomatoes, peppers, okra, 
+      eggplant, sugar snap peas, melons, pumpkins, and sometimes even popcorn! 
+      Fruit crops get three different nutrient mixes depending on their growth stage: leaf, flowering/fruiting, and ripening.  
+      Bato or Dutch buckets filled with clay pellets provide root support for these larger crops, 
+      and nylon string with vine clips strung from the greenhouse rafters help to trellis branches and vines. 
+      Integrated Pest Management (IPM) is used to keep aphids, 
+      spider mites, and other pests at bay without the need for pesticides.`,
     img: 'Greenhouse_2.jpg',
     adjacentRooms: ['Greenhouse_1', 'Back_Patio']
   },
   Back_Patio: {
     roomName: 'Back_Patio',
     info: `
-      * Granite top custom-made cabinet
-      * Custom wine rack display and storage.
-      * Modern chandelier with LED lights.
-      * Easy access to backyard when entertaining.
-      * Open and spacious.
+      Behind the greenhouses is a stunning view of the Hudson River Estuary and the Palisade cliffs in New Jersey.  
+      The Science Barge is unique because it is a floating farm, built on a 1950’s spud barge, 
+      but our educational impact is also due to our location. 
+      Here we can talk about how the built environment of our cities and farmland affects the natural environment, 
+      observing it often in real time. On this day, the historic Clearwater Sloop, 
+      another environmental education vessel launched in 1969, 
+      happened to be docking at the Science Barge.
     `,
     img: 'Back_Patio.jpg',
     adjacentRooms: ['Greenhouse_2', 'Compose']
@@ -50,8 +64,11 @@ export default house = {
   Compose: {
     roomName: 'Compose',
     info: `
-      All compose is recycled is come way for the Barge.
-      Here are a few ways.
+      Improved waste management practices is critical to a more sustainable future. 
+      On the Science Barge, we teach about the 4 R’s: Reduce, Reuse, Recycle, and Reject.  
+      Most of the waste we generate is “organic” (coming from living things) however, and can therefore be composted: nature’s way of recycling. 
+      We use (1) anaerobic biodigesters, (2) vermiculture (worm compost), 
+      and (3) aerobic tumbler composters to turn paper, plant prunings, and food scraps into usable nutrients.
     `,
     img: 'Compose.jpg',
     adjacentRooms: ['Main_Deck','Back_Patio']
@@ -59,18 +76,22 @@ export default house = {
   Roof: {
     roomName: 'Roof',
     info: `
-      All of the energy needed to power the Barge is generated by solar panels, 
-      wind turbines, and biofuels while the hydroponic greenhouse is irrigated solely by collected  
-      rainwater and purified river water, thus operating completely “off the grid.”`,
+      100% of the energy needed to power the Barge’s amenities is generated by 5 solar arrays (~85%), 
+      5 small wind turbines (~10%), and a biodiesel generator (~5%), 
+      while the greenhouse is irrigated with solely with collected rainwater thus operating completely 
+      “off the grid.”  The green roof seen here on top of the shipping container helps to keep the battery room below cool
+    `,
     img: 'Roof.jpg',
     adjacentRooms: ['Main_Deck', 'Starboard_Patio']
   },
   Starboard_Patio:  {
     roomName: 'Starboard_Patio',
     info: `
-      It is the only fully functioning demonstration of renewable 
-      energy supporting sustainable food production in New York. 
-      It is now docked in downtown Yonkers just north of the Yonkers Pier.`,
+      Our outdoor classroom is situated at the confluence of the Saw Mill River and the Hudson River. Here we can observe both the effects of continued runoff from our city streets and the wildlife 
+      that depends on this ecosystem getting healthier. The two passive tracking solar arrays remind us how nature can inspire green innovations as they are an example of biomimicry, 
+      following the sun across the sky just as sunflowers do. A man-made marsh between the arrays serves as a waste-water repository for the Science Barge, using salt-tolerant reeds and cattails for bioremediation. 
+      *Bonus: Can you spot Hess, the developer of this VR Tour in this picture?
+    `,
     img: 'Starboard_Patio.jpg',
     adjacentRooms: ['Main_Deck', 'Roof']
   }
